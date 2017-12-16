@@ -1,0 +1,346 @@
+body{
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+/*ANIMATED SCROLLING SECTION*/
+
+.firstFade, .secondFade, .thirdFade{
+	display: none;
+}
+
+.contentFade{
+	opacity: 0;
+	-webkit-transform: translatez(0);
+    -moz-transform: translatez(0);
+    -ms-transform: translatez(0);
+    -o-transform: translatez(0);
+    transform: translatez(0);
+}
+
+.contentFadeFast{
+	opacity: 0;
+	 -webkit-transform: translatez(0);
+    -moz-transform: translatez(0);
+    -ms-transform: translatez(0);
+    -o-transform: translatez(0);
+    transform: translatez(0);
+}
+
+/* SECTION HEADINGS*/
+.section{
+	text-align: center;
+	font-weight: 700;
+	font-size: 32px;	
+}
+
+
+/*FOR TITLE PAGE AREA*/
+
+/*Large screen mobile devices*/ 
+@media screen and (max-width: 1100px){
+	
+}
+
+
+.title{
+	padding: 55px 0px 0px;
+}
+
+.titleimg{
+	object-fit: cover;
+	width: 100%;
+}
+
+.heading{
+	font-size: 40px;
+	font-weight: 700;
+	position: absolute;
+	top: 120px;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.heading2{
+	font-size: 24px;
+	position: absolute;
+	top: 160px;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.heading3{
+	font-size: 16px;
+	position: absolute;
+	top: 200px;
+	left: 50%;
+	font-weight: 700;
+	transform: translate(-50%, -50%);
+}
+
+.heading4{
+	font-size: 16px;
+	position: absolute;
+	top: 230px;
+	left: 50%;
+	font-weight: 700;
+	transform: translate(-50%, -50%);
+}
+
+/*NAVBAR AREA*/
+
+a#bookNow {
+	display: block;
+    position: relative;
+    top: -50px;
+    visibility: hidden;
+}
+
+.navbar-brand{
+	font-size: 28px;
+}
+
+.nav-item{
+	font-size: 18px;
+}
+
+.active{
+	font-weight: 700;
+}
+
+
+
+/*WELCOME AREA*/
+.welcomeContainer{
+	width: 100%;
+}
+
+.welcomeImg{
+	width: 100%;
+	height: 100%;
+
+}
+
+
+.welcome{	
+	width: 49.8%;
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+	}
+
+.welcomeMessage{
+	padding-top: 5%;
+	text-align: center;
+	font-size: 28px;
+	font-weight: 700;
+	vertical-align: middle;
+	font-family: 'Roboto', sans-serif;
+}
+
+.welcomeMessage2{
+	text-align: left;
+	font-size: 18px;
+	padding: 5%;
+	vertical-align: middle;
+	font-family: 'Roboto', sans-serif;
+}
+
+.bookButton{
+	border: 2px solid black;
+	text-align :center;
+	font-weight: 700;
+	padding: 15px 100px;
+	font-family: 'Roboto', sans-serif;
+	background-color: white;
+	border-radius: 5px;
+}
+
+.bookButton:hover{
+	background-color: black;
+	color: white;
+	-webkit-transition: all 0.5s linear;
+	-moz-transition: all 0.5s linear;
+	-o-transition: all 0.5s linear;
+	transition: all 0.5s linear;
+}
+
+/* ROOM SECTIONS*/
+
+#rooms{
+	padding: 50px 0px;
+	text-align: center;
+}
+
+.deluxe, .kitchen, .family{
+	padding: 50px 0px;
+}
+
+.photoGallery{
+	padding: 25px 25px;
+	display: block;
+}
+
+.roomimg{	
+	width: 50%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.hidden{
+	display: none;
+}
+
+.fa-chevron-circle-left, .fa-chevron-circle-right{
+	font-size: 30px;
+	color: black;
+}
+
+/* ROOM FEATURES SECTION*/
+a#featuresLink {
+	display: block;
+    position: relative;
+    top: -50px;
+    visibility: hidden;
+}
+
+
+.features{
+	height: auto;	
+	padding: 60px 0px;
+}
+
+.featuretable{
+	width: 100%;
+}
+
+.featuretable, .featurerow, .featurecol{
+	padding: 25px;
+	text-align: left;
+}
+
+.featureitems{
+	list-style-type: circle;
+	font-weight: 700;
+}
+
+.listleft, .listright{
+	margin: 0 auto;
+	width: 50%;
+}
+
+/*ROOM RATES SECTION*/
+.rates{
+	padding: 50px 0px 0px;
+	background-image: url("bed-2607154.jpg");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: left;
+
+}
+
+a#ratesLink {
+	display: block;
+    position: relative;
+    top: -50px;
+    visibility: hidden;
+}
+
+
+.table-responsive{
+	padding: 20px 0px;
+	font-size: 18px;
+}
+
+.prices, .priceheading, .pricecol{
+	padding: 25px;
+	text-align: center;
+}
+.prices{
+	width: 100%;
+}
+
+.priceheading, .pricecol{
+	border-bottom: 1px solid grey;
+
+}
+
+.priceheading{
+	font-weight: 700;
+	font-size: 20px;
+}
+
+.pricerow{
+	transition-duration: 0.5s;
+}
+
+.pricerow:hover{
+	background-color: #c9c9c9;
+	font-weight: 700;
+}
+
+/* RATE TERMS SECTION*/
+
+.terms{
+	padding: 0px 30px 0px;
+	text-align: center;
+}
+
+.listterms{
+	text-align: left;
+	list-style-type: circle;
+	display: inline-block;
+	font-size: 18px;
+	font-weight: 700;
+}
+
+.ratesnotice, .termitems{
+	padding: 10px;
+}
+
+.ratesnotice{
+	font-size: 20px;
+	font-weight: 700;
+}
+
+
+/*CONTACT SECTION*/
+.contact{
+	padding: 40px 0px;
+	text-align: center;
+}
+
+a#contactLink {
+	display: block;
+    position: relative;
+    top: -50px;
+    visibility: hidden;
+}
+
+.contactinfo{
+	display: inline-block;
+	font-size: 18px;
+	width: 30%;
+	padding: 40px 0px;
+}
+
+/* GOOGLE MAPS FORMATTING */
+.map{
+	height: 0;
+	padding-bottom: 45%;
+	overflow: hidden;
+	position: relative;
+}
+
+.map iframe{
+	position: absolute;
+	top: 0;
+	left: 10%;
+	width: 80%;
+	height: 100%;
+}
+
+
+/*COPYRIGHT SECTION*/
+.copyright{
+	padding: 50px 0px 0px;
+	text-align: center;
+	font-size: 20px;
+}
