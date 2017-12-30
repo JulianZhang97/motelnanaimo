@@ -37,18 +37,22 @@ body{
 /*FOR TITLE PAGE AREA*/
 
 /*Large screen mobile devices*/ 
-@media screen and (max-width: 1100px){
-	
+@media only screen and (max-width: 801px){
+.titleimg{
+		content:url("display-images/title_small.jpg");
+	}
+
 }
 
 
 .title{
 	padding: 55px 0px 0px;
 }
-
+	
 .titleimg{
 	object-fit: cover;
-	width: 100%;
+	width: 100%;	
+	content:url("display-images/title.jpg");
 }
 
 .heading{
@@ -116,7 +120,7 @@ a#bookNow {
 .welcomeImg{
 	width: 100%;
 	height: 100%;
-
+	content:url("display-images/summer_2013.jpg");
 }
 
 
@@ -229,7 +233,7 @@ a#featuresLink {
 /*ROOM RATES SECTION*/
 .rates{
 	padding: 50px 0px 0px;
-	background-image: url("bed-2607154.jpg");
+	background-image: url("display-images/bed-2607154.jpg");
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-position: left;
