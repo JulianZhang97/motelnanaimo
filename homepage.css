@@ -29,21 +29,171 @@ body{
 /* SECTION HEADINGS*/
 .section{
 	text-align: center;
-	font-weight: 700;
-	font-size: 32px;	
+	font-weight: 700;	
 }
 
+/* Responsive Media Queries*/
 
-/*FOR TITLE PAGE AREA*/
-
-/*Large screen mobile devices*/ 
-@media only screen and (max-width: 801px){
-.titleimg{
-		content:url("display-images/title_small.jpg");
+@media only screen and (min-width: 1280px){
+	.welcome{	
+	width: 49.8%;
 	}
 
+	.welcomeContainer{
+	width: 100%;
+	}
 }
 
+@media only screen and (min-width: 1025px){
+	.contactinfo{
+		font-size: 18px;
+	}
+}
+
+@media only screen and (min-width: 851px){
+	.contactinfo{
+		width: 33%;
+	}
+	.roomimg{	
+		width: 55%;
+	}
+}
+
+@media only screen and (min-width: 601px){
+	.heading{
+		font-size: 2.5em;
+	}
+	.heading2{
+		font-size: 1.5em;
+	}
+	.heading3{
+		font-size: 1em;
+	}
+	.heading4{
+		font-size: 1em;
+	}
+	.section{
+		font-size: 2em;	
+	}
+	.welcomeMessage{
+		font-size: 1.8em;
+	}
+	.welcomeMessage2{
+		font-size: 1.125em;
+	}
+	.featureitems{
+		font-size: 1.125em;
+	}
+	.table-responsive{
+		font-size: 1.125em;
+	}
+	.priceheading{
+		font-size: 1.25em;
+	}
+	.ratesnotice{
+		font-size: 1.25em;
+	}
+	.listterms{
+		font-size: 1.125em;
+	}
+	.bookButton{
+		font-size: 1em;
+		padding: 15px 100px;
+	}
+	.fa-chevron-circle-left, .fa-chevron-circle-right{
+		font-size: 	1.8em;
+	}
+}
+
+
+@media only screen and (max-width: 1279px){
+.titleimg{
+		content:url("display-images/title_medium.jpg");
+	}
+.welcome{	
+	width: 100%;
+	padding-top: 2.5%;
+	}
+.welcome2{	
+	width: 100%;
+	}
+}
+
+
+@media only screen and (max-width: 850px){
+	.contactinfo{
+		width: 100%;
+	}
+	.roomimg{	
+		width: 70%;
+	}
+}
+
+@media only screen and (max-width: 600px){
+	.titleimg{
+		content:url("display-images/title_small.jpg");
+	}
+	.heading{
+		font-size: 1.875em;
+	}
+	.heading2{
+		font-size: 1.125em;
+	}
+	.heading3{
+		font-size: 0.75em;
+	}
+	.heading4{
+		font-size: 0.75em;
+	}
+	.section{
+		font-size: 1.5em;	
+	}
+	.welcomeMessage{
+		font-size: 1.35em;
+	}
+	.welcomeMessage2{
+		font-size: 0.85em;
+	}
+	.featureitems{
+		font-size: 0.85em;
+	}
+	.table-responsive{
+		font-size: 0.90em;
+	}
+	.priceheading{
+		font-size: 0.95em;
+	}
+	.ratesnotice{
+		font-size: 0.95em;
+	}
+	.listterms{
+		font-size: 0.90em;
+	}
+	.bookButton{
+		font-size: 0.90em;
+		padding: 15px 50px;
+	}
+	.fa-chevron-circle-left, .fa-chevron-circle-right{
+		font-size: 	1.5em;
+	}
+}
+
+@media only screen and (max-width: 400px){
+	.heading{
+		font-size: 1.5em;
+	}
+	.heading2{
+		font-size: 1.0em;
+	}
+	.roomimg{	
+		width: 85%;
+	}
+	.fa-chevron-circle-left, .fa-chevron-circle-right{
+		font-size: 	1em;
+	}
+}
+
+/*FOR TITLE PAGE AREA*/
 
 .title{
 	padding: 55px 0px 0px;
@@ -51,39 +201,35 @@ body{
 	
 .titleimg{
 	object-fit: cover;
-	width: 100%;	
-	content:url("display-images/title.jpg");
+	width: 100%;
+	height: auto;
 }
 
 .heading{
-	font-size: 40px;
 	font-weight: 700;
 	position: absolute;
-	top: 120px;
+	top: 20%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
 .heading2{
-	font-size: 24px;
 	position: absolute;
-	top: 160px;
+	top: 26%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-}
+}	
 
 .heading3{
-	font-size: 16px;
 	position: absolute;
-	top: 200px;
+	top: 34%;
 	left: 50%;
 	font-weight: 700;
 	transform: translate(-50%, -50%);
 }
 
 .heading4{
-	font-size: 16px;
 	position: absolute;
-	top: 230px;
+	top: 38%;
 	left: 50%;
 	font-weight: 700;
 	transform: translate(-50%, -50%);
@@ -110,11 +256,9 @@ a#bookNow {
 	font-weight: 700;
 }
 
-
-
 /*WELCOME AREA*/
 .welcomeContainer{
-	width: 100%;
+	/*width: 100%;*/
 }
 
 .welcomeImg{
@@ -125,16 +269,19 @@ a#bookNow {
 
 
 .welcome{	
-	width: 49.8%;
 	display: inline-block;
 	vertical-align: top;
 	text-align: center;
-	}
+}
+
+.welcome2{	
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+}
 
 .welcomeMessage{
-	padding-top: 5%;
 	text-align: center;
-	font-size: 28px;
 	font-weight: 700;
 	vertical-align: middle;
 	font-family: 'Roboto', sans-serif;
@@ -142,7 +289,6 @@ a#bookNow {
 
 .welcomeMessage2{
 	text-align: left;
-	font-size: 18px;
 	padding: 5%;
 	vertical-align: middle;
 	font-family: 'Roboto', sans-serif;
@@ -152,7 +298,6 @@ a#bookNow {
 	border: 2px solid black;
 	text-align :center;
 	font-weight: 700;
-	padding: 15px 100px;
 	font-family: 'Roboto', sans-serif;
 	background-color: white;
 	border-radius: 5px;
@@ -170,21 +315,20 @@ a#bookNow {
 /* ROOM SECTIONS*/
 
 #rooms{
-	padding: 50px 0px;
+	padding: 20px 0px;
 	text-align: center;
 }
 
 .deluxe, .kitchen, .family{
-	padding: 50px 0px;
+	padding: 20px 0px;
 }
 
 .photoGallery{
-	padding: 25px 25px;
+	padding: 10px 10px;
 	display: block;
 }
 
 .roomimg{	
-	width: 50%;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -193,7 +337,6 @@ a#bookNow {
 }
 
 .fa-chevron-circle-left, .fa-chevron-circle-right{
-	font-size: 30px;
 	color: black;
 }
 
@@ -208,7 +351,7 @@ a#featuresLink {
 
 .features{
 	height: auto;	
-	padding: 60px 0px;
+	padding: 20px 0px;
 }
 
 .featuretable{
@@ -216,18 +359,17 @@ a#featuresLink {
 }
 
 .featuretable, .featurerow, .featurecol{
-	padding: 25px;
 	text-align: left;
 }
 
 .featureitems{
 	list-style-type: circle;
-	font-weight: 700;
+	font-weight: 700; 
 }
 
-.listleft, .listright{
+.listleft{
 	margin: 0 auto;
-	width: 50%;
+	width: 80%;
 }
 
 /*ROOM RATES SECTION*/
@@ -250,7 +392,7 @@ a#ratesLink {
 
 .table-responsive{
 	padding: 20px 0px;
-	font-size: 18px;
+	/*font-size: 18px;*/
 }
 
 .prices, .priceheading, .pricecol{
@@ -268,7 +410,6 @@ a#ratesLink {
 
 .priceheading{
 	font-weight: 700;
-	font-size: 20px;
 }
 
 .pricerow{
@@ -291,7 +432,6 @@ a#ratesLink {
 	text-align: left;
 	list-style-type: circle;
 	display: inline-block;
-	font-size: 18px;
 	font-weight: 700;
 }
 
@@ -300,7 +440,6 @@ a#ratesLink {
 }
 
 .ratesnotice{
-	font-size: 20px;
 	font-weight: 700;
 }
 
@@ -319,9 +458,9 @@ a#contactLink {
 }
 
 .contactinfo{
+	
+	font-weight: 700;
 	display: inline-block;
-	font-size: 18px;
-	width: 30%;
 	padding: 40px 0px;
 }
 
@@ -348,3 +487,4 @@ a#contactLink {
 	text-align: center;
 	font-size: 20px;
 }
+
